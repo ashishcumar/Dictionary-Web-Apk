@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --black: #2a363b;
+  --red: #e84a5f;
+  --green: #99b898;
+  --lightred: #ff847c;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    var(--lightred) 5%,
+    var(--red) 15%,
+    var(--black) 65%
+  );
+}
+
+.container {
+  width: 420px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 28px 28px 45px;
+}
+
+header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.search {
+  margin: 30px 0 10px 0px;
+}
+.search input {
+  height: 53px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0 42px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.fa-search {
+  position: relative;
+  left: 12px;
+  bottom: 35px;
+  pointer-events: none;
+  font-size: 16px;
+  color: black;
+}
+
+.fa-xmark {
+  position: relative;
+  left: 89%;
+  bottom: 35px;
+  font-size: 20px;
+}
+.fa-volume-up {
+  position: relative;
+  bottom: 36px;
+  left: 92%;
+  font-size: 18px;
+}
+
+.container ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.container ul{
+    display: none;
+    height: 0;
+    width: 0;
+    transition: all 0.2s ease;
+}
+
+.container.active ul{
+    display: block;
+    height: 150px;
+    width: 100%;
+
+}
+
+
+.info-text{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px 0px 20px 0;
+}
+
+p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+span{
+    font-size: 16px;
+}
+
+li{
+    border-bottom: 1px solid lightgray;
+    padding: 0px 10px;
+    border-left: 2px solid var(--lightred);
+    border-radius: 5px;
+    margin: 5px ;
+}
